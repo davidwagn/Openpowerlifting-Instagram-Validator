@@ -20,7 +20,7 @@ This project is used to check Instagram links used in OpenPowerlifting's dataset
 
 # How to get your headers
 
-1. Log in to Instagram if you aren't.
+1. Log in to Instagram on your browser if you aren't.
 
 2. Open your browser's developer tools.
 
@@ -32,6 +32,6 @@ These should be the headers you need. All fields in the dummy header file should
 
 **Make sure to properly escape special characters in your headers, particularly " and \\**
 
-# Why do I need to provide headers instead of an access token or similar?
+# Why do I need to provide these headers instead of an access token or similar?
 
 Instagram's new public API is stupid beyond any reasonability. I'd rather hang myself than work with it. Since this doesn't use the public API, you don't need an API key, but need to pretend you're a browser.
