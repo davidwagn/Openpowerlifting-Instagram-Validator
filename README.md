@@ -13,10 +13,25 @@ This project is used to check Instagram links used in OpenPowerlifting's dataset
 
 3. Provide your own headers in the dummy headers file. Note that this file must be valid JSON.
 
-4. Run the script.
+4. Run validator.py.
 
 5. Wait - most of the time spent is sleeping, as the script sleeps 1 second between each check to not get blocked by Instagram's spam detection.
 
+6. Wait until Instagram's spam detection blocks you anyways.
+
+7. Go to Instagram's site on your browser, you'll be forced to reset your password because they think your account was compromised.
+
+8. Redo your headers. You'll likely only need to update parts of your cookie.
+
+9. Copy the accounts_left file and rename it.
+
+10. Add a line at the very top using 1 comma (something like "name,Instagram")
+
+11. Change the validator.py to use your copied and renamed accounts_left file's path as data path
+
+12. Goto step 4
+
+Instagram will not be happy about you doing this. You may want to use a burner account. Going through all links will take a few hours. Steps 9 and 10 might be obsolete in a future update, they only exist because I chose a bad way to store the temp results.
 
 # How to get your headers
 
