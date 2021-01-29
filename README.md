@@ -30,7 +30,7 @@ This project is used to check Instagram links used in OpenPowerlifting's dataset
 
 These should be the headers you need. All fields in the dummy header file should be filled. If you see other fields (especially those starting with :), ignore them.
 
-**Make sure to properly escape special characters in your headers, particularly " and \**
+**Make sure to properly escape special characters in your headers, particularly " and \\**
 
 # Why do I need to provide headers instead of an access token or similar?
 
