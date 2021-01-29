@@ -18,7 +18,7 @@ with open("headers") as fp:
     )
 
 
-def load_accounts():
+def load_accounts() -> [] or None:
     try:
         with open(account_file_path, encoding="UTF-8") as csvfile:
             reader = csv.reader(csvfile)
@@ -39,8 +39,7 @@ def check_account(instagram: str) -> int:
 
 
 def check_accounts(accs: []) -> None:
-    while len(
-            accs) > 0:  # doing this instead of for-each for greater control over iteration - we might check accounts multiple times
+    while len(accs) > 0:  # doing this instead of for-each for greater control over iteration - we might check accounts multiple times
         log("Checking: {}".format(accs[0]))
         result = check_account(accs[0])
         log("Result code: {}".format(result))
@@ -59,7 +58,7 @@ def check_accounts(accs: []) -> None:
             time.sleep(2 * 60)
 
 
-def update_results(accs, current_acc, result):
+def update_results(accs: [], current_acc: str, result: bool) -> None:
     try:
         with open(positive_result_path if result else negative_result_path, mode="a") as result_file:
             result_file.write("{},\n".format(current_acc))
@@ -70,15 +69,13 @@ def update_results(accs, current_acc, result):
             left_file.write(accs_csv)
     except IOError as error:
         log("Error reading file: {}".format(error))
-        return None
     except BaseException as error:
         log("Error logging results: {}".format(error))
-        return None
 
 
-def log(message):
+def log(message: str) -> None:
     try:
-        with open(log_file_path, mode="a", encoding="UTF-8") as log_file:
+        with open(log_file_path, mode="a") as log_file:
             to_write = "{}: {}\n".format(datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S"), message)
             log_file.write(to_write)
             print(to_write)
