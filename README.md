@@ -34,4 +34,4 @@ These should be the headers you need. All fields in the dummy header file should
 
 # Why do I need to provide these headers instead of an access token or similar?
 
-Instagram's new public API is stupid beyond any reasonability. I'd rather hang myself than work with it. Since this doesn't use the public API, you don't need an API key, but need to pretend you're a browser.
+Instagram's new public API is stupid beyond any reasonability. Since this doesn't use the public API, you don't need an API key, but need to pretend you're a browser.
