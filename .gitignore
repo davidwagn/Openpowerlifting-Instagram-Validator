@@ -154,4 +154,3 @@ fabric.properties
 headers
 *.log
 results/
-data/
