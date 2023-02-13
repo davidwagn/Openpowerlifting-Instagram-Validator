@@ -1,4 +1,4 @@
-This project is not affiliated with OpenPowerlifting. Find the original source code on [GitLab](https://gitlab.com/openpowerlifting).
+This project is not affiliated with OpenPowerlifting. Find its source code on [GitLab](https://gitlab.com/openpowerlifting).
 
 # OpenPowerlifting Instagram Validator
 
