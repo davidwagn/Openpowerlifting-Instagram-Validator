@@ -1,5 +1,7 @@
 This project is not affiliated with OpenPowerlifting. Find its source code on [GitLab](https://gitlab.com/openpowerlifting).
 
+# Note: Instagram does not send 404 status code anymore, even when the account does not exist. This script won't work without finding a new way to determine if accounts are dead or alive. Instagram also killed the little ?__a=1 trick in the url to only get a quick JSON response.
+
 # OpenPowerlifting Instagram Validator
 
 This project is used to check Instagram links used in OpenPowerlifting's dataset for validity. Specifically, it checks if the Instagram site exists or not.
