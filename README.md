@@ -4,6 +4,8 @@ This project is not affiliated with OpenPowerlifting. Find its source code on [G
 
 Second Note: https://www.secure.instagram.com/instagram/?__a=1 might be something to look into
 
+Third note: Looks like the secure.instagram.com subdomain also doesn't work anymore. Instagram *really* doesn't want anyone scraping accounts.
+
 # OpenPowerlifting Instagram Validator
 
 This project is used to check Instagram links used in OpenPowerlifting's dataset for validity. Specifically, it checks if the Instagram site exists or not.
